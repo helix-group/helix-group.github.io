@@ -1152,9 +1152,10 @@ form input[type="submit"], form button, form input[type="reset"] {
   .branding .logo {
     margin-right: 10px; }
   .branding .logo-type .site-title {
-    margin: 0 0 5px;
+    margin: 0 0 0px;
     font-size: 16px;
-    font-size: 1.0666666667em; }
+    font-size: 1.4em;
+    font-weight: 500; }
   .branding .logo-type .site-description {
     font-size: 12px;
     font-size: 0.8em; }
@@ -1341,6 +1342,20 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-weight: 300;
     margin: 0 0 10px; }
   .page-head small {
+    font-size: 18px;
+    font-size: 1.2em; }
+
+.page-head-large {
+  background-size: cover;
+  padding: 250px 0;
+  text-align: center;
+  color: white; }
+  .page-head-large .page-title {
+    font-size: 60px;
+    font-size: 4em;
+    font-weight: 300;
+    margin: 0 0 10px; }
+  .page-head-large small {
     font-size: 18px;
     font-size: 1.2em; }
 
