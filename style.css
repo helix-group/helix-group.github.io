@@ -1724,6 +1724,43 @@ figure {
       border-bottom: none; }
 
 
+/*added by Yuhao*/
+
 .publication-year {
   margin-bottom: 60px;
 }
+
+.boxed-software {
+  border-radius: 5px;
+  border: 1px solid #edf2f4;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 20px;
+  margin-bottom: 30px; }
+  .boxed-software img{
+    max-width: 220px;
+    max-height: 400px;
+    border-radius: 5%;
+    display: inline-block;
+  }
+  .boxed-software h3 {
+    font-weight: 300;
+    font-size: 30px;
+    font-size: 1.8em; 
+  }
+  .boxed-software h4 {
+    font-weight: 200;
+    font-size: 20px;
+    font-size: 1.2em; 
+  }
+
+.bottom-banner {
+  display: table;
+  margin: 0 auto; }
+  .bottom-banner h2 {
+    font-size: 24px;
+    font-size: 1.6em;
+    font-weight: 300;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 0; }
