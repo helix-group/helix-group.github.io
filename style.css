@@ -1764,3 +1764,12 @@ figure {
     display: inline-block;
     vertical-align: middle;
     margin: 0 20px 0 0; }
+
+/* for the people bio animation */
+.hidden-content {
+  display:none;}
+
+.bio a.animated {
+  outline: 0;
+  color: inherit;
+}
