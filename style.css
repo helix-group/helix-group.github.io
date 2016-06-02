@@ -1808,6 +1808,7 @@ figure {
 /* all links */
 .bs-docs-sidebar .nav>li>a {
   color: #8e9ca5;
+  outline: none;
   border-left: 2px solid transparent;
   padding: 4px 20px;
   font-size: 14px;
@@ -1859,4 +1860,9 @@ figure {
   .bs-docs-sidebar {
     display:none
   }
+}
+
+.colophon {
+  color: #bfc7cb;
+  font-size: 14px;
 }

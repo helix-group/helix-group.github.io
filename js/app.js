@@ -64,6 +64,18 @@
 	        	}
 	        })
       	}, 100);
+
+		// For sliding effect when click on an item in the sidebar
+      	function scrollToAnchor(aid){
+		    var aTag = $(aid);
+		    $('html,body').animate({scrollTop: aTag.offset().top-20}, 400);
+		}
+
+		$(".slide-anchor").click(function(e) {
+			e.preventDefault();
+			var aid = $(this).attr("href");
+			scrollToAnchor(aid);
+		});
 	});
 
 	$(window).load(function(){
