@@ -34,16 +34,43 @@
 			});
 			
 		}
+
+		// For clickable bio
+		$(".bio > a").click(function(e){
+		    e.preventDefault();
+		    $(this).next(".short-bio").slideToggle().end().parent().siblings().find(".short-bio").slideUp();
+		});
+
+		// For affix publication list sidebar
+		$(document.body).scrollspy({
+			target: ".bs-docs-sidebar",
+        	offset: 40
+		});
+
+		setTimeout(function() {
+			var body = $(document.body);
+	        var sidebar = $(".bs-docs-sidebar");
+	        sidebar.affix({
+	          	offset: {
+	            	top: function() {
+	              	var t = sidebar.offset().top;
+	              	return this.top = t
+		            },
+		            bottom: function() {
+		            	var h = body.height();
+		            	var p = $("#publication-list");
+		              	return this.bottom = h - (p.offset().top + p.height())
+		            }
+	        	}
+	        })
+      	}, 100);
 	});
 
 	$(window).load(function(){
 
+		// For affix publication list sidebar
+		$(document.body).scrollspy("refresh");
+
 	});
 
 })(jQuery, document, window);
-
-
-$(".bio > a").click(function(e){
-    e.preventDefault();
-    $(this).next(".short-bio").slideToggle().end().parent().siblings().find(".short-bio").slideUp();
-});

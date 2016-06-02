@@ -1773,3 +1773,90 @@ figure {
   outline: 0;
   color: inherit;
 }
+
+/* for publication vertical nav sidebar */
+
+.affix {
+  position: fixed;
+}
+.affix-bottom {
+  position: absolute;
+}
+
+#sidebar.affix {
+  top: 20px;
+}
+
+/* sidebar */
+.bs-docs-sidebar {
+  padding-left: 20px;
+  /*margin-top: 20px;*/
+  margin-bottom: 20px;
+}
+
+.bs-docs-sidebar h2 {
+  padding: 0px 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.bs-docs-sidebar ul {
+  list-style-type: none;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+  color: #8e9ca5;
+  border-left: 2px solid transparent;
+  padding: 4px 20px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>li>a:focus {
+  color: #69acc7;                 
+  text-decoration: none;          
+  background-color: transparent;  
+  border-left-color: #69acc7; 
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+  font-weight: 400;
+}
+
+/* For nested sidebar links */
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 13px;
+}
+
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a, 
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+  font-weight: 300;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+  display: none;           
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+  display: block;
+}
+
+@media screen and (max-width: 1199px){
+  .bs-docs-sidebar {
+    display:none
+  }
+}
