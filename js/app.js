@@ -76,6 +76,7 @@
 			var aid = $(this).attr("href");
 			scrollToAnchor(aid);
 		});
+
 	});
 
 	$(window).load(function(){
@@ -83,6 +84,11 @@
 		// For affix publication list sidebar
 		$(document.body).scrollspy("refresh");
 
+		$('.flexslider').flexslider({
+		    animation: "slide",
+			controlNav: false,
+			// directionNav: false
+		});
 	});
 
 })(jQuery, document, window);

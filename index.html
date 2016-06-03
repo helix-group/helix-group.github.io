@@ -13,6 +13,7 @@
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/flexslider.css">
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 		
 		<!--[if lt IE 9]>
@@ -66,45 +67,33 @@
 							</div>
 						</div>
 					</li>
-					<!-- <li data-bg-image="images/slider-2.jpg">
-						<div class="container">
-							<div class="slide-content">
-								<h2 class="slide-title">LaboreLabore et dolore magna</h2>
-								<p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.</p>
-								<a href="#" class="button">See details</a>
-							</div>
-						</div>
-					</li>-->
 				</ul>
 			</div>
 
 			<div class="fullwidth-block">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-8">
+						<div class="col-md-7">
 							<h2 class="section-title">Latest News</h2>
-							<div class="col-md-6">
-								<div class="post">
-									<figure class="featured-image"><img src="images/news-1.jpg" alt=""></figure>
-									<h2 class="entry-title"><a href="">News: Someone joined the lab</a></h2>
-									<small class="date">2 oct 2014</small>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...</p>
-								</div>
+							<div class="news-board" id="latest-news">
+								<ul class="news-list">
+									<li>Here is a piece of news that we would like to anounce in the Helix Group. I keep typing because I want to make this news very long but I don't know what to say. Ok that works.</li>
+									<li class="borderline"></li>
+									<li>Here is another piece of news that serves as a placeholder. I want it long as well so I will just repeat what I did in the last part. And here is a <a href="#">place holder link</a> that I want to test out.</li>
+									<li class="borderline"></li>
+									<li> This is a piece of <strong>highlighted short news</strong>, that will take only one line.</li>
+									<li class="borderline"></li>
+									<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li>
+								</ul>
 							</div>
-							<div class="col-md-6">
-								<div class="post">
-									<figure class="featured-image"><img src="images/news-2.jpg" alt=""></figure>
-									<h2 class="entry-title"><a href="">News: We got a new grant</a></h2>
-									<small class="date">2 oct 2014</small>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...</p>
-								</div>
-							</div>
+
 						</div>
+						<div class="col-md-1"></div>
 						<div class="col-md-4">
 							<h2 class="section-title">
 								Twitter Feeds <a class="twitter-follow-button" href="https://twitter.com/Rbaltman" data-show-count="false" data-button="grey">Follow @Rbaltman</a>
 							</h2>
-							<a class="twitter-timeline" href="https://twitter.com/Rbaltman" data-widget-id="738106291944493056" data-chrome="noheader nofooter" data-link-color="#69acc7" data-height="400">Tweets by @Rbaltman</a>
+							<a class="twitter-timeline" href="https://twitter.com/Rbaltman" data-widget-id="738106291944493056" data-chrome="noheader nofooter noscrollbar" data-link-color="#69acc7" data-height="350" id="twitter-feed">Tweets by @Rbaltman</a>
 						</div>
 					</div> <!-- .row -->
 				</div> <!-- .container -->
@@ -207,6 +196,12 @@
 		<script src="js/app.js"></script>
 		<!-- For embedded tweets -->
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		</script>
+		<script>
+			$(document).ready(function() {
+				var h = $("#latest-news").height();
+				$("#twitter-feed").attr("data-height", h+20);
+			});
 		</script>
 		
 	</body>
