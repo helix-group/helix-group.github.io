@@ -38,7 +38,9 @@
 		// For clickable bio
 		$(".bio > a").click(function(e){
 		    e.preventDefault();
-		    $(this).next(".short-bio").slideToggle().end().parent().siblings().find(".short-bio").slideUp();
+		    // $(this).next(".short-bio").slideToggle().end().parent().siblings().find(".short-bio").slideUp();
+		    var current_bio = $(this).next(".short-bio").slideToggle();
+		    $(".short-bio").not(current_bio).slideUp();
 		});
 
 		// For affix publication list sidebar

@@ -13,7 +13,7 @@
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="css/flexslider.css">
+		<!-- <link rel="stylesheet" href="css/flexslider.css"> -->
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 		
 		<!--[if lt IE 9]>
@@ -98,6 +98,42 @@
 					</div> <!-- .row -->
 				</div> <!-- .container -->
 			</div> <!-- .fullwidth-block -->
+
+			<!-- <div class="fullwidth-block" data-bg-color="#edf2f4">
+				<div class="container">
+					<div class="row">
+					 <p> This is just a separator. </p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="fullwidth-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+						</div>
+						<div class="col-md-6">
+							<div class="album">
+								<div class="flexslider">
+								  <ul class="slides">
+								    <li>
+								      <img src="images/people/team.jpg" />
+								      <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+								    </li>
+								    <li>
+								      <img src="images/bg/books.jpg" />
+								      <p class="flex-caption">Adventurer Lemon</p>
+								    </li>
+								  </ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+						</div>
+					</div>
+				</div>
+			</div> -->
 
 			<main class="main-content"  data-bg-color="#edf2f4">
 				<div class="fullwidth-block">
@@ -199,8 +235,16 @@
 		</script>
 		<script>
 			$(document).ready(function() {
+				var max_height = 1000;
+				var min_height = 300;
 				var h = $("#latest-news").height();
-				$("#twitter-feed").attr("data-height", h+20);
+				var tw_h = h + 20;
+				if (h < min_height) {
+					tw_h = min_height
+				} else if (h > max_height) {
+					tw_h = max_height
+				}
+				$("#twitter-feed").attr("data-height", tw_h);
 			});
 		</script>
 		
