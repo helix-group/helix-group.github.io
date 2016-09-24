@@ -1726,9 +1726,30 @@ figure {
 
 /*added by Yuhao*/
 
+ul.p-list {
+  margin-left: 50px;
+  margin-right: 50px; }
+
+p.centered-large {
+  text-align: center;
+  font-size: 18px;
+}
+
 .publication-year {
   margin-bottom: 60px;
 }
+  .publication-year ul {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .publication-year ul strong {
+    font-weight: normal;
+    font-size: 16px;
+  }
+  .publication-year li {
+    margin-bottom: 10px;
+  }
 
 .boxed-software {
   border-radius: 5px;
@@ -1944,7 +1965,3 @@ ol.circle-news-list {
   padding: 30px;
   max-height: 500px;
 }
-
-ul.p-list {
-  margin-left: 50px;
-  margin-right: 50px; }
