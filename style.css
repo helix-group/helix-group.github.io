@@ -1944,3 +1944,7 @@ ol.circle-news-list {
   padding: 30px;
   max-height: 500px;
 }
+
+ul.p-list {
+  margin-left: 50px;
+  margin-right: 50px; }
