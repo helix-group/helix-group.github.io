@@ -1,11 +1,20 @@
+#bib_to_html.py
+#Adam Lavertu
+"""
+This script takes in a .bib file as a command line argument and prints corresponding html for those publications to the terminal.
+Publications are styled for the Helix Group Website in the following format.
+Title. Journal. Author. Year
+OR
+ Title. Journal. Author. Year Volume; Pages
+"""
+
 import sys
-
-import bibtexparser
-
 
 with open(sys.argv[1], "r") as citation_in:
 	papers = dict()
 
+	# Import the data in the .bib file storing each entry within a papers dictionary
+	# and each field within an entry dictionary.
 	for line in citation_in.readlines():
 		if "@" in line:
 			new_entry = True
@@ -24,10 +33,11 @@ with open(sys.argv[1], "r") as citation_in:
 				# print(line[1])
 				temp_dict[line[0].strip(' ')] = line[1]
 
+	
 	for paper in papers:
 		paper = papers.get(paper)
+		# Reformat the author list
 		paper["author"] = [x.split(", ") for x in paper["author"].split(" and ")]
-		
 		aut_list = []
 		for x in paper["author"]:
 			temp = x[1].split(" ")
@@ -42,7 +52,8 @@ with open(sys.argv[1], "r") as citation_in:
 			paper["author"] = ", ".join(aut_list[0:len(aut_list)-1]) + " and " + aut_list[len(aut_list)-1]
 		else:
 			paper["author"] = " and ".join(aut_list)
-		#print(paper["title"])
+
+		#Print html code for the references to the terminal
 		if "volume" in paper:
 			print("<li><strong>" + paper["title"] + "</strong> " + paper["journal"].upper() + ". " + paper["author"] + " " + paper["year"] +"; " + paper["volume"] + ": " + paper["pages"] + "</li>\n")
 		else:
