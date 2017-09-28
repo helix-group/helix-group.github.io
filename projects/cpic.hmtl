@@ -68,35 +68,26 @@
 						<div class="row">
 							<div class="col-md-6">
 								<figure>
-									<img src="../images/project/pharmgkb.png" alt="">
+									<img src="../images/project/cpic.png" alt="">
 								</figure>
 							</div>
 							<div class="col-md-6">
-								<h2 class="section-title">PharmGKB</h2>
+								<h2 class="section-title">CPIC</h2>
 								<ul class="project-info">
 									<li><strong>Goal:</strong> The PharmGKB is a pharmacogenomics knowledge resource that encompasses clinical information including dosing guidelines and drug labels, potentially clinically actionable gene-drug associations and genotype-phenotype relationships.<br>
 									<a href="https://www.pharmgkb.org/">www.pharmgkb.org</a> </br></li>
 									<li><strong>Download:</strong> <a href="https://www.pharmgkb.org/downloads/">PharmGKB Downloads</a> </li>
 									<li><strong>Software Code:</strong> <a href="https://github.com/pharmgkb">Github</a></li>
-									<li><strong>PIs:</strong> Russ B. Altman, PhD and Teri E. Klein, PhD</li> 
-									<li><strong>Funding:</strong> NIH/NIGMS R24 GM61374 </li>
+									<li><strong>PIs:</strong>Teri E. Klein, PhD and Mary V. Relling, PharmD</li> 
+									<li><strong>Funding:</strong> NIH/NIGMS (R24 GM61374) </li>
 								</ul>
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="col-md-12">
-								<p>The PharmGKB is a pharmacogenomics knowledge resource that encompasses clinical information including dosing guidelines and drug labels, potentially clinically actionable gene-drug associations and genotype-phenotype relationships. PharmGKB collects, curates and disseminates knowledge about the impact of human genetic variation on drug responses through the following activities:
-								<ul class='p-list'>
-									<li>Annotate genetic variants and gene-drug-disease relationships via literature reviews;</li>
-									<li>Summarize important pharmacogenomic genes, associations between genetic variants and drugs, and drug pathways;</li>
-									<li>Curate FDA drug labels containing pharmacogenomic information;</li>
-									<li>Enable consortia examining important questions in pharmacogenomics;</li>
-									<li>Curate and participate in writing pharmacogenomic-based drug dosing guidelines;</li>
-									<li>Contribute to clinical implementation projects for pharmacogenomics through collaborations;</li>
-									<li>Publish pharmacogenomic-based drug dosing guidelines, very important pharmacogene summaries and drug-centered pathways;</li>
-									<li>Display all information on the website and provide comprehensive downloads.</li>
-								</ul>
+								<p>
+								One barrier to implementation of pharmacogenetic testing in the clinic is the difficulty in translating genetic laboratory test results into actionable prescribing decisions for affected drugs.  CPIC’s goal is to address this barrier to clinical implementation of pharmacogenetic tests by creating, curating, and posting freely available, peer-reviewed, evidence-based, updatable, and detailed gene/drug clinical practice guidelines.  CPIC guidelines follow standardized formats, include systematic grading of evidence and clinical recommendations, use standardized terminology, are peer-reviewed and are published in partnership with Clinical Pharmacology and Therapeutics).
 								</p>
 							</div>
 						</div>
