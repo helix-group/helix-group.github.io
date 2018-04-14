@@ -6,5 +6,4 @@
 Export the search for the latest year as a citation file and load into Mendeley
 
 # Step 3:
-
-Export from Mendeley as a bib file, then process using the python script
+Export from Mendeley as a bib file, then process using the python script. Paste script output into the publication.html page and format correctly.
