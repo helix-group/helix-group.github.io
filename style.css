@@ -1344,6 +1344,20 @@ form input[type="submit"], form button, form input[type="reset"] {
   .page-head small {
     font-size: 18px;
     font-size: 1.2em; }
+.page-head-large-black{
+  background-size: cover;
+  padding: 250px 0;
+  text-align: center;
+  color: white; }
+  .page-head-large .page-title {
+    font-size: 60px;
+    font-size: 4em;
+    font-weight: 300;
+    margin: 0 0 10px; }
+  .page-head-large small {
+    font-size: 18px;
+    font-size: 1.2em; }
+
 
 .page-head-large {
   background-size: cover;
