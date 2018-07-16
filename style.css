@@ -1349,12 +1349,11 @@ form input[type="submit"], form button, form input[type="reset"] {
   padding: 250px 0;
   text-align: center;
   color: white; }
-  .page-head-large .page-title {
-    font-size: 60px;
-    font-size: 4em;
+  .page-head-large-black .page-title {
+    font-size: 80px;
     font-weight: 300;
     margin: 0 0 10px; }
-  .page-head-large small {
+  .page-head-large-black small {
     font-size: 18px;
     font-size: 1.2em; }
 
