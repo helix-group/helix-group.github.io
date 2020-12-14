@@ -1,0 +1,14 @@
+# CMR template construction
+
+CMR template forms follow a standardized directory structure for import into the system. Each template directory contains a template image stored in PNG format. Two JSON files specifying the pixel locations of the relevant checkboxes for each priority group, vulnerable populations and healthcare workers are placed in the same directory. 
+
+The inclusion of a new template requires the manual mapping of the priority checkboxes to form pixel locations. In our experience this process takes less than an hour and often less than 15 minutes. We then retrain the form template classification model to detect this new template, as well as the previous template. Retraining the template classification model on a single Nvidia V100 GPU takes a few hours and additional speed improvements could be made to this process. Overall, it is possible to set up a new template within a 24hr time period for fast deployment of the system to new forms. 
+
+
+The processed PDFs are then output as follows: if a PDF contains only CMRs or only CMRs  and a fax cover page, then each CMR is output as a separate PDF with a file name that indicates relative priority and a sample count. If there are multiple non-CMR pages in the source PDF, then a single PDF is output to avoid splitting relevant case information across files. The  output file names for these mixed CMR PDFs indicate relevant information about the location of CMRs within the file and the maximum priority of the CMRs in that file. If there are no templates detected the input file is copied to the output directory with a “NTD” prefix to indicate that No Templates were Detected. 
+
+After the new file has been saved, the name of the source file is written to a cache to avoid reprocessing of faxes upon a system restart. 
+
+# Email notification component
+
+We wanted to provide the ability for the system to create a push notification for caseworkers for high priority cases. To protect patient privacy and minimize potential security issues, a simple perl script was hosted on a server that sends a notification to the relevant email when pinged. We used this process to provide real-time monitoring during the initial deployment. 
