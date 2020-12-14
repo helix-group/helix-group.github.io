@@ -532,7 +532,7 @@ p {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
   background-color: #fff;
 }
@@ -1034,6 +1034,21 @@ section {
   color: #fff;
   background: #166ab5;
 }
+
+/*--------------------------------------------------------------
+# Templates
+--------------------------------------------------------------*/
+.templates h5 {
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+  margin-top: 20px;
+}
+
+.templates h5 a {
+  color: #166ab5; 
+  text-orientation: center;
+}
+
 /*--------------------------------------------------------------
 # Deploy
 --------------------------------------------------------------*/
@@ -1074,6 +1089,7 @@ section {
   padding: 0 30px;
   outline: none;
 }
+
 .deploy .deploy-list-item a {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
