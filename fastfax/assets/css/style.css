@@ -977,6 +977,11 @@ section {
   padding: 0 30px;
   outline: none;
 }
+.deploy .deploy-list a:link {
+  padding: 0;
+  color: #166ab5;
+  display: inline;
+}
 
 .deploy .deploy-list-item a {
   font-family: "Poppins", sans-serif;
@@ -1224,11 +1229,14 @@ section {
   outline: none;
 }
 
+.faq .faq-list a:link {
+  padding: 0;
+  color: #166ab5;
+  display: inline;
+}
+
 .faq .faq-list .icon-help {
   font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
   color: #76b5ee;
 }
 
