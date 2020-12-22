@@ -1038,69 +1038,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Departments
---------------------------------------------------------------*/
-.departments {
-  overflow: hidden;
-}
-
-.departments .nav-tabs {
-  border: 0;
-}
-
-.departments .nav-link {
-  border: 0;
-  padding: 12px 15px 12px 0;
-  transition: 0.3s;
-  color: #2c4964;
-  border-radius: 0;
-  border-right: 2px solid #ebf1f6;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.departments .nav-link:hover {
-  color: #166ab5;
-}
-
-.departments .nav-link.active {
-  color: #166ab5;
-  border-color: #166ab5;
-}
-
-.departments .tab-pane.active {
-  -webkit-animation: fadeIn 0.5s ease-out;
-  animation: fadeIn 0.5s ease-out;
-}
-
-.departments .details h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #2c4964;
-}
-
-.departments .details p {
-  color: #777777;
-}
-
-.departments .details p:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .departments .nav-link {
-    border: 0;
-    padding: 15px;
-  }
-  .departments .nav-link.active {
-    color: #000;
-    background: #166ab5;
-  }
-}
-
-/*--------------------------------------------------------------
-# Doctors
+# Team
 --------------------------------------------------------------*/
 .team {
   background: #fff;
@@ -1279,6 +1217,25 @@ section {
   .faq .faq-list {
     padding: 0;
   }
+}
+
+/*--------------------------------------------------------------
+# Press
+--------------------------------------------------------------*/
+.press h5 {
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+  margin-top: 20px;
+}
+
+.press h5 a {
+  color: #166ab5; 
+  text-orientation: center;
+}
+
+.press h5 a:link {
+  color: #166ab5; 
+  text-orientation: center;
 }
 
 /*--------------------------------------------------------------
