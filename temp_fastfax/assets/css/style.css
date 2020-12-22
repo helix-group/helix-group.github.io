@@ -132,12 +132,12 @@ p {
   display: inline-block;
   line-height: 1px;
   transition: 0.3s;
-  max-height: 30px; 
+  max-height: 35px; 
   align-content: right;
 }
 
 #topbar.topbar-scrolled {
-  top: -20px;
+  top: -10px;
 }
 
 
