@@ -937,6 +937,11 @@ section {
   text-orientation: center;
 }
 
+.templates h5 a:hover {
+  color: #000; 
+  text-orientation: center;
+}
+
 /*--------------------------------------------------------------
 # Deploy
 --------------------------------------------------------------*/
@@ -1235,6 +1240,10 @@ section {
 
 .press h5 a:link {
   color: #166ab5; 
+  text-orientation: center;
+}
+.press h5 a:hover {
+  color: #000; 
   text-orientation: center;
 }
 
