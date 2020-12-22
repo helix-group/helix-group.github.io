@@ -1439,6 +1439,11 @@ section {
   color: #cccccc;
 }
 
+.contact p {
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
 .contact .info .email, .contact .info .phone {
   margin-top: 40px;
 }
